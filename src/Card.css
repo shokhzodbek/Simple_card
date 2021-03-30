@@ -1,0 +1,145 @@
+.card {
+	position: relative;
+	min-width: 320px;
+	height: 500px;
+	box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+		5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	margin: 30px;
+	overflow-x: none;
+}
+
+.card .box {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	background-color: #2a2b2f;
+	border-radius: 20px;
+	border: 2px solid #1e1f23;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease;
+}
+.box.light {
+	background-color: white !important;
+	border: 2px solid white;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+.box.light .content h3 {
+	font-size: 1.8rem;
+	font-weight: 300;
+	color: #233 !important;
+}
+.box.light .content h4 {
+	color: #233 !important;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.card:hover .box {
+	transform: translateY(-50px);
+	box-shadow: 0 40px 70px rgba(0, 0, 0, 0.2);
+}
+
+.card .box .content {
+	padding: 20px;
+	text-align: center;
+}
+
+.card .box .content .icon {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.card .box .content .icon {
+	color: white;
+	font-size: 2rem;
+}
+
+.card .box .content h3 {
+	font-size: 1.8rem;
+	font-weight: 300;
+	color: #fff;
+}
+
+.card .box .content h4 {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.card .box .content h4 sup {
+	font-size: 0.75rem;
+	font-weight: 300;
+}
+
+.card .box .content ul {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.card .box .content ul li {
+	list-style: none;
+	color: white;
+	margin: 5px 0;
+	display: flex;
+	align-items: center;
+}
+.box.light .content ul li {
+	list-style: none;
+	color: #232;
+	margin: 5px 0;
+	display: flex;
+	align-items: center;
+}
+.card .box .content ul li .check {
+	color: #0f0;
+	margin-right: 5px;
+}
+
+.card .box .content ul li .times {
+	color: #f00;
+	margin-right: 5px;
+}
+.card .box .content a {
+	position: relative;
+	display: inline-block;
+	padding: 8px 20px;
+	margin-top: 15px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+}
+
+.card:nth-child(1) .box .content a,
+.card:nth-child(1) .box .content .icon {
+	background-color: #2196f3;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(2) .box .content a,
+.card:nth-child(2) .box .content .icon {
+	background-color: #e91e63;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(3) .box .content a,
+.card:nth-child(3) .box .content .icon {
+	background-color: #97dc47;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

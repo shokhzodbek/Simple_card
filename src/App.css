@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #232427;
+	overflow-x: none;
+	transition: all 0.5s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light {
+	background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	padding: 100px 0 50px;
+	overflow-x: none;
 }
-
-.App-link {
-  color: #61dafb;
+.toggle {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	background-color: aqua;
+	cursor: pointer;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-x: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle .sun {
+	color: rgb(172, 172, 68);
+	font-size: 2rem;
+}
+.toggle .moon {
+	color: #fff;
+	font-size: 2rem;
 }
